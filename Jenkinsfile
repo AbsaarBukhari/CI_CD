@@ -10,13 +10,13 @@ pipeline {
   stages {
     stage('Test') {
       steps {
-        git 'https://github.com/AbsaarBukhari/CI_CD.git'
+        git 'https://github.com/databinaries001/ci-cd-demo.git'
         sh 'go test ./...'
       }
     }
     stage('Build') {
         steps {
-        git 'https://github.com/AbsaarBukhari/CI_CD.git'
+        git 'https://github.com/databinaries001/ci-cd-demo.git'
         sh 'go build .'
         }
     }
