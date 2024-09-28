@@ -25,6 +25,5 @@ pipeline {
             sh 'cd /var/lib/jenkins/workspace/full-cicd-go && go-webapp-sample &'
         }
     }
-
   }
 }
